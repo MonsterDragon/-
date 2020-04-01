@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include"function.h"
 
 int main()
 {
@@ -8,6 +9,9 @@ int main()
 	{
 		printf("data[%d] = %d", i, data[i]);
 	}
-	printf("++5 = %d", data[++aa]);
-	printf("5++ = %d", data[aa++]);
+	printf("++5 = %d\n", data[++aa]);
+	printf("5++ = %d\n", data[aa++]);
+	aaa();
+	printf("Max = %d\n", Max);
 }
+
