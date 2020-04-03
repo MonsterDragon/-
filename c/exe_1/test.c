@@ -11,7 +11,6 @@ int main()
 	}
 	printf("++5 = %d\n", data[++aa]);
 	printf("5++ = %d\n", data[aa++]);
-	aaa();
-	printf("Max = %d\n", Max);
+	printf("%d\n", aa/2);
 }
 
