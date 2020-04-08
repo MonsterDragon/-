@@ -9,7 +9,7 @@ int LeastInt(int *L, int n)
 	int i;
 	for (i = 0; i < n; i++)
 	{
-		if (L[i] > 0)
+		if (L[i] > 0 && L[i] <= n)
 		{
 			data[L[i] - 1]++;
 		}
