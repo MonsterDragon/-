@@ -29,6 +29,14 @@ bool Empty(DLinkList L)
 		return false;
 }
 
+// 判断结点p是否为循环双链表的标为节点
+bool Tail(DLinkList L, DNode *q)
+{
+	if (q -> next == L)
+		return true;
+	else
+		return false;
+}
 int main()
 {
 	DLinkList L;
