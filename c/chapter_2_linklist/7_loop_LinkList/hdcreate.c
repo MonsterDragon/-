@@ -20,6 +20,15 @@ DLinkList InitDLinkList(DLinkList L)
 	return L;
 }
 
+// 判断循环双链表是否为空
+bool Empty(DLinkList L)
+{
+	if (L -> next == L)
+		return true;
+	else
+		return false;
+}
+
 int main()
 {
 	DLinkList L;
