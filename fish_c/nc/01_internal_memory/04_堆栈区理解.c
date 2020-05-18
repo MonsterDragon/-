@@ -20,6 +20,9 @@ char * getNum2()
 	char buf[64];
 	strcpy(buf, "123456789");
 	printf("buf : %s\n", buf);
+	printf("buf: %p\n", &buf);
+	char *a = "123456789";
+	printf("a: %p\n", a);
 	return buf;
 }
 
@@ -34,5 +37,5 @@ void main()
 	strcpy(tmp, "111222"); // 将111222拷贝到tmp所指向的内存空间
 	printf("tmp: %s\n", tmp);
 	tmp = getNum2();
-	printf("tmp: %s\n", tmp);
+	printf("tmp: %s\n", tmp); // 堆的东西，不delete保证存在。栈的东西，函数返回了不保证存在
 }
