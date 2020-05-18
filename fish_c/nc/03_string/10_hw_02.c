@@ -17,13 +17,13 @@ void sort(char *orstr, char *todd, char *teven)
 		if (i%2 == 0)
 		{
 			printf("%d\n", i);
-			*even = from[i];
-			even++;
+			*odd = from[i];
+			odd++;
 		}
 		else
 		{
-			*odd = from[i];
-			odd++;
+			*even = from[i];
+			even++;
 		}
 		i++;
 	}
