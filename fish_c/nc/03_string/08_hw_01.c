@@ -24,9 +24,7 @@ int clean(char *orstr, char *nstr)
 		}
 		else
 		{
-			to++;
 			from++;
-			continue;
 		}
 	}
 
@@ -36,7 +34,7 @@ int clean(char *orstr, char *nstr)
 int main()
 {
 	char *nstr = "    abcdefgdddd    ";
-	char newstr[strlen(nstr) + 1];
+	char newstr[strlen(nstr)];
 	int result;
 	printf("nstr: %p\n", nstr);
 	printf("newstr: %p\n", newstr);
