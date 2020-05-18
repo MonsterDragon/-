@@ -2,6 +2,7 @@
 #include<string.h>
 #include<string.h>
 
+// 变量的本质是按照数据类型实际分配的内存块的别名
 void main()
 {
 	int a;
@@ -18,5 +19,5 @@ void main()
 	printf("a : %d\n", a);
 
 	// 对内存空间可以取别名
-	
+	typedef int aa;
 }
