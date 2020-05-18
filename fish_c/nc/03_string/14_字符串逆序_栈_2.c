@@ -35,7 +35,7 @@ void reversal_2(char *p)
 	}
 	reversal_2(p+1);
 	// strcat(g_str, p); // 会将p所对应的全部字符串都拷贝到g_str
-	strncat(g_str, p, 1); // 会将p所对应的一个字符拷贝到g_str
+	strncat(g_str, p, 1); // 会将p所对应的一个字符拷贝到g_str字符串的末尾并添加'\0'
 }
 
 void reversal_3(char *p, char *tmp)
