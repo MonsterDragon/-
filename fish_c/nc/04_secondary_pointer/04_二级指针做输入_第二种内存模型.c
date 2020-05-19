@@ -40,8 +40,11 @@ int main()
 {
 	char myArray[10][30] = {"ddddd", "aaaaa", "zzzzzzzzzz", "ppppp"};
 	int num = sizeof(myArray) / sizeof(myArray[0]);
+	int len1 = sizeof(myArray);
+	int len2 = sizeof(myArray[0]);
 
-	printf("%d\n", num);
+	// 多维数组本质，数组元素的步长
+	printf("len1: %d, len2: %d, num: %d\n", len1, len2, num);
 	
 	printmyArray(myArray, num);
 	sort(myArray, num);
