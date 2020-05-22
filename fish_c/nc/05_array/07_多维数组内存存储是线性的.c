@@ -28,6 +28,6 @@ int main()
 	// 数组指针的等价关系
 	//       数组参数	    ===>        等效指针形参
 	// 一维数组 char a[30] 			指针 char *a
-	// 指针数组 char (*a)[30]    		二级指针 char **a
-	// 二维数组 char a[3][5]		指针数组 char (*a)[5]; char a[][5]
+	// 指针数组 char *a[30]    		二级指针 char **a
+	// 二维数组 char a[3][5]		数组指针 char (*a)[5]; char a[][5]
 }
