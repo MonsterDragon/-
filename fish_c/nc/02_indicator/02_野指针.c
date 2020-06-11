@@ -13,4 +13,6 @@ void main()
 	printf("p : %p\n", p);
 	free(p);
 	printf("p: %p\n", p);
+	int i = 0;
+	printf("i: %p\n", i);
 }

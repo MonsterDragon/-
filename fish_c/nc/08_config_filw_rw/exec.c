@@ -2,7 +2,7 @@
 #include<stdbool.h>
 #include<stdlib.h>
 #include<string.h>
-#include"cfg_op.c"
+#include"cfg_op.h"
 
 int menu()
 {

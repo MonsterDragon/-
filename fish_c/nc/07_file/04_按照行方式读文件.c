@@ -6,7 +6,12 @@
 int main()
 {
 	FILE *fp = NULL;
-	char a[1024];
+	char a[1024] = {0};
+	int j = 0;
+	for (j=0; j<1024; j++)
+	{
+		printf("%d\n", a[j]);
+	}
 	char *filename = "./test.txt";
 
 	fp = fopen(filename, "r+");

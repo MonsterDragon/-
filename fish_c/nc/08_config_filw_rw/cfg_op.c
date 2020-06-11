@@ -2,7 +2,7 @@
 #include<stdbool.h>
 #include<stdlib.h>
 #include<string.h>
-#include"cfg_op.h"
+//#include"cfg_op.h"
 #define Maxlen 2048
 
 // 写修改配置文件

@@ -1,0 +1,3 @@
+2020-06-06 09:12:20,932 get_zk_all_status.py[line:62] DEBUG running:cat /data/zookeeper-3.4.14/conf/zoo.cfg,output:
+cat: /data/zookeeper-3.4.14/conf/zoo.cfg: 没有那个文件或目录
+

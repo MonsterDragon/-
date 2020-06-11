@@ -12,7 +12,8 @@ struct dlist
 	int count;
 };
 
-void search(int *L, int n)
+// void search(int *L, int n)
+void search(int L[], int n)
 {
 	int i, j, data;
 	for (i = 0; i < n; i++)
@@ -54,11 +55,11 @@ void dsearch(struct dlist *d, int *a, int k)
 	printf("%p\n", a);
 	for (i = 0; i < k; i++)
 	{
-		printf("array[%d] = %d\n", i, a[i]);
+		// printf("array[%d] = %d\n", i, a[i]);
 		index = a[i] - 1;
 		d[index].count++;
 		d[index].data = index + 1;
-		printf("index = %d, %d = %d\n", index, d[index].data, d[index].count);
+		// printf("index = %d, %d = %d\n", index, d[index].data, d[index].count);
 	}
 	int j;
 	int max=0;

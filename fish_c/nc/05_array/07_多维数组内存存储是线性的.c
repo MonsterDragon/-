@@ -24,7 +24,7 @@ int main()
 			array[i][j] = tmp++;
 		}
 	}
-	printarray((int *)array, 15); // 指针的强制转换，将一位数组转化为二维数组
+	printarray((int *)array, 15); // 指针的强制转换，将二维数组转化为一维数组
 	// 数组指针的等价关系
 	//       数组参数	    ===>        等效指针形参
 	// 一维数组 char a[30] 			指针 char *a
