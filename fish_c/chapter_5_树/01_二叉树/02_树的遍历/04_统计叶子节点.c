@@ -26,6 +26,27 @@ void countleaf(BiTNode *T, int *sum)
 	}
 }
 
+// 求树的深度
+int Depth(BiTNode *T)
+{
+	int depleft = 0;
+	int depright = 0;
+	int deptval = 0;
+
+	if (T == NULL)
+	{
+		return deptval;
+	}
+
+	depleft = Depth(T -> lchild);
+
+	depright = Depth(T -> rchild);
+
+	deptval = 1 + (depleft > depright ? depleft : depright);
+
+	return deptval;
+}
+
 int main()
 {
 	BiTNode t1, t2, t3, t4, t5;
@@ -45,4 +66,5 @@ int main()
 
 	countleaf(&t1, &sum);
 	printf("%d\n", sum);
+	printf("%d\n", Depth(&t1));
 }
