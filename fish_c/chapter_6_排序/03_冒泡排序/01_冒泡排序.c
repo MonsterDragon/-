@@ -58,7 +58,7 @@ void Update_BubbleSort_2(int *array, int len)
 		{
 			if (array[j] < array[j - 1])
                         {
-                                temp = array[j - 1];
+                                temp = array[j - 1]; // 如果在本轮循环中没有元素的顺序发生调换，则退出大循环，否则继续下一轮循环
                                 array[j - 1] = array[j];
                                 array[j] = temp;
 				exchange = 1;
