@@ -24,7 +24,24 @@ void heap_adjust(int *arr, int start, int end)
 {
 	int parent = start;
 	int child = 2 * start + 1;
-	while (child <= end)
+	// while (child <= end)
+	// {
+	// 	if (child + 1 <= end && arr[child + 1] > arr[child])
+	// 	{
+	// 		child++;
+	// 	}
+	// 	if (arr[parent] > arr[child])
+	// 	{
+	// 		return;
+	// 	}
+	// 	else
+	// 	{
+	// 		swap(arr, parent, child);
+	// 		parent = child;
+	// 		child = child * 2 + 1;
+	// 	}
+	// }
+	if (child <= end)
 	{
 		if (child + 1 <= end && arr[child + 1] > arr[child])
 		{
@@ -37,9 +54,12 @@ void heap_adjust(int *arr, int start, int end)
 		else
 		{
 			swap(arr, parent, child);
-			parent = child;
-			child = child * 2 + 1;
+			heap_adjust(arr, child, end); // while循环可以通过递归进行替换
 		}
+	}
+	else
+	{
+		return;
 	}
 }
 
