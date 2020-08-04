@@ -25,7 +25,7 @@ int main()
 	printf("sizeof(b): %d\n", sizeof(b)); // 40
 	printf("sizeof(a): %d\n", sizeof(a)); // 4
 	// b和&b的数据类型不相同
-	// b代表的是数组收元素的地址
+	// b代表的是数组首元素的地址
 	// &b代表的是整个数组的地址
 	
 	void *p2 = NULL;
