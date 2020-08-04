@@ -15,6 +15,12 @@ typedef struct teacher2
 	int age;
 }Teacher2;
 
+void test(int (*array)[]) // 一维数组的指针本质是一维数组指针
+{
+	int i;
+	printf("%d\n", (*array)[0]);
+}
+
 // 数据类型的本质：固定大小内存块的别名
 // 定义一个数组数据类型，数组指针，数组类型和数组指针类型的关系
 int main()
@@ -30,5 +36,5 @@ int main()
 	
 	void *p2 = NULL;
 	p2 = malloc(100); // malloc函数返回的是void指针，void指针原则上可以存储所有数据类型的指针，作为右值赋值给其他变量时要强制类型转换
-	
+	test(&b);
 }
